@@ -1,7 +1,7 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
-    <id>com.sidnio.contribution.Contribution</id>
+    <id>Contribution</id>
 
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
@@ -27,18 +27,20 @@
     <extensions defaultExtensionNs="com.intellij">
 
     </extensions>
-    <actions>
-<!--        <action id="$test" class="com.sidnio.contribution.test" text="test22" description="tttttttt"/>-->
-<!--        <group id="TranslationToolBar" text="Translation Toolbar Actions">-->
-<!--            <separator/>-->
-<!--            <reference ref="$test"/>-->
-<!--            <separator/>-->
 
-<!--            <add-to-group group-id="MainToolBar" anchor="last"/>-->
-<!--        </group>-->
-        <action id="aaaaaa" class="com.sidnio.contribution.aaaaaa" text="ddddddddddd"
-                description="ddddddddddddddddddddd" icon="AllIcons.Actions.InSelection">
-            <add-to-group group-id="MainToolbarNewUI" anchor="first"/>
+
+    <!-- 注册插件组件 -->
+    <actions>
+        <action id="com.sidnio.contribution.MyPluginAction" class="com.sidnio.contribution.MyPluginAction" text="My Action"
+                description="My Plugin Action Description">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt X"/>
         </action>
+                <group id="com.sidnio.contribution.MyPluginAction" text="My Plugin" description="My Plugin Actions" popup="true" icon="ContributeIcons.contribute">
+                    <add-to-group group-id="MainToolBar" anchor="last"/>
+
+                </group>
+
+
     </actions>
+
 </idea-plugin>

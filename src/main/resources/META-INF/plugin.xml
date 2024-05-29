@@ -27,4 +27,18 @@
     <extensions defaultExtensionNs="com.intellij">
 
     </extensions>
+    <actions>
+<!--        <action id="$test" class="com.sidnio.contribution.test" text="test22" description="tttttttt"/>-->
+<!--        <group id="TranslationToolBar" text="Translation Toolbar Actions">-->
+<!--            <separator/>-->
+<!--            <reference ref="$test"/>-->
+<!--            <separator/>-->
+
+<!--            <add-to-group group-id="MainToolBar" anchor="last"/>-->
+<!--        </group>-->
+        <action id="aaaaaa" class="com.sidnio.contribution.aaaaaa" text="ddddddddddd"
+                description="ddddddddddddddddddddd" icon="AllIcons.Actions.InSelection">
+            <add-to-group group-id="MainToolbarNewUI" anchor="first"/>
+        </action>
+    </actions>
 </idea-plugin>

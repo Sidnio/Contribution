@@ -13,7 +13,7 @@ public class MyPluginAction extends AnAction {
 
 
     public MyPluginAction() {
-       this(ContributeIcons.LogosActiveCampaign);
+       this(ContributeIcons.contribute);
     }
 
     public MyPluginAction(@Nullable Icon icon) {

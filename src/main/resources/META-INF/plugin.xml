@@ -11,30 +11,31 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
+        <postStartupActivity implementation="com.sidnio.contribution.MyPluginStartupActivity"/>
     </extensions>
 
 
-    <actions>
-        <!-- Define the action -->
-        <action id="com.sidnio.contribution.MyAction" class="com.sidnio.contribution.MyPluginAction"
-                text="My Action Text" description="My Action Description"  >
-           <!-- <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt D"/>-->
-        </action>
+<!--    <actions>-->
+<!--        &lt;!&ndash; Define the action &ndash;&gt;-->
+<!--        <action id="com.sidnio.contribution.MyAction" class="com.sidnio.contribution.MyPluginAction"-->
+<!--                text="My Action Text" description="My Action Description"  >-->
+<!--           &lt;!&ndash; <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt D"/>&ndash;&gt;-->
+<!--        </action>-->
 
-        <!-- Define the group -->
-        <group id="com.sidnio.contribution.MyPluginGroup" text="My Plugin">
-            <reference ref="com.sidnio.contribution.MyAction"/>
-            <add-to-group group-id="MainToolbarCenter" anchor="last"/>
+<!--        &lt;!&ndash; Define the group &ndash;&gt;-->
+<!--        <group id="com.sidnio.contribution.MyPluginGroup" text="My Plugin">-->
+<!--            <reference ref="com.sidnio.contribution.MyAction"/>-->
+<!--            <add-to-group group-id="MainToolbarCenter" anchor="last"/>-->
 
-            <add-to-group group-id="BasicEditorPopupMenu" anchor="first"/>
-            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
-            <add-to-group group-id="ConsoleEditorPopupMenu" anchor="first"/>
-            <add-to-group group-id="Diff.EditorPopupMenu" anchor="first"/>
+<!--            <add-to-group group-id="BasicEditorPopupMenu" anchor="first"/>-->
+<!--            <add-to-group group-id="EditorPopupMenu" anchor="first"/>-->
+<!--            <add-to-group group-id="ConsoleEditorPopupMenu" anchor="first"/>-->
+<!--            <add-to-group group-id="Diff.EditorPopupMenu" anchor="first"/>-->
 
-            <add-to-group group-id="Documentation.PrimaryGroup"/>
-            <add-to-group group-id="HelpMenu" anchor="before" relative-to-action="WhatsNewAction"/>
-        </group>
+<!--            <add-to-group group-id="Documentation.PrimaryGroup"/>-->
+<!--            <add-to-group group-id="HelpMenu" anchor="before" relative-to-action="WhatsNewAction"/>-->
+<!--        </group>-->
 
 
-    </actions>
+<!--    </actions>-->
 </idea-plugin>

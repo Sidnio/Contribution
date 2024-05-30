@@ -7,8 +7,9 @@
     <list default="true" id="80483889-d96a-4c2a-a9d5-9bdf086a1468" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sidnio/contribution/MyPluginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sidnio/contribution/MyPluginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/icons/ContributeIcons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/icons/ContributeIcons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sidnio/contribution/sssss.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/icons - 副本/contribute.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +65,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Action" />
+        <option value="Class" />
       </list>
     </option>
   </component>
